@@ -3,11 +3,11 @@
 # Mechanistic Anomaly Detection experiments
 This is a collection of (sometimes outdated and messy) experiments on mechanistic anomaly detection, primarily using the [cupbearer](https://github.com/ejnnr/cupbearer) library.
 
-The main notebooks I used to test new methods were [`tiny_natural_mechanisms.ipynb`](https://github.com/jordansauce/mad-experiments/blob/main/tiny_natural_mechanisms.ipynb) and [`tiny_natural_mechanisms_ifelse.ipynb`](https://github.com/jordansauce/mad-experiments/blob/main/tiny_natural_mechanisms_ifelse.ipynb). These contains various activation-based anomaly detection techniques on Jacob Hilton's natural mechanism distinction `hex` and `ifelse` tasks, respectively. The `hex` task is a dataset for distinguishing between two different natural mechanisms the model uses to output hexadecimal tokens. This dataset has been adapted into a [cupbearer task](https://github.com/ejnnr/cupbearer/blob/main/src/cupbearer/tasks/tiny_natural_mechanisms.py), which is what the notebook uses. 
+The main notebooks I used to test new methods were [`tiny_natural_mechanisms.ipynb`](https://github.com/jordansauce/mad-experiments/blob/main/tiny_natural_mechanisms.ipynb) and [`tiny_natural_mechanisms_ifelse.ipynb`](https://github.com/jordansauce/mad-experiments/blob/main/tiny_natural_mechanisms_ifelse.ipynb). These contain various activation-based anomaly detection techniques applied to Jacob Hilton's natural mechanism distinction `hex` and `ifelse` tasks, respectively. The `hex` task is a dataset for distinguishing between two different natural mechanisms the model uses to output hexadecimal tokens. Jacob's tasks have been adapted into a [cupbearer task](https://github.com/ejnnr/cupbearer/blob/main/src/cupbearer/tasks/tiny_natural_mechanisms.py), which is what these notebooks use. 
 
 The natural mechanism distinction tasks are lightweight and should run on a laptop, but some other notebooks load 8B models and require up to 40GB of VRAM. Consider renting a GPU on vast.ai or similar for those. However the importance of quick feedback loops provided by tiny models should not be underestimated.
 
-Cells involving the "Basis Invariant Attribution Detector" require installing [this branch](https://github.com/jordansauce/cupbearer/tree/VAE-relevance-metric) of cupbearer, but don't bother with that unless you're interested in approaches like that as the performance was poor anyway. 
+**Cells involving the "Basis Invariant Attribution Detector" require installing [this branch](https://github.com/jordansauce/cupbearer/tree/VAE-relevance-metric) of cupbearer, but don't bother with that unless you're interested in approaches like that as the performance was poor anyway. **
 
 
 
