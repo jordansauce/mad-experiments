@@ -7,7 +7,7 @@ The main notebooks I used to test new methods were [`tiny_natural_mechanisms.ipy
 
 The natural mechanism distinction tasks are lightweight and should run on a laptop, but some other notebooks load 8B models and require up to 40GB of VRAM. Consider renting a GPU on vast.ai or similar for those. However the importance of quick feedback loops provided by tiny models should not be underestimated.
 
-**Cells involving the "Basis Invariant Attribution Detector" require installing [this branch](https://github.com/jordansauce/cupbearer/tree/VAE-relevance-metric) of cupbearer, but don't bother with that unless you're interested in approaches like that as the performance was poor anyway. **
+**Cells involving the "Basis Invariant Attribution Detector" require installing [this branch](https://github.com/jordansauce/cupbearer/tree/VAE-relevance-metric) of cupbearer, but don't bother with that unless you're interested in approaches like that as the performance was poor anyway.**
 
 
 
